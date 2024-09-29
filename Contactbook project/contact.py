@@ -18,7 +18,7 @@ def addContact():
 
         else:
             try:
-                conn=pymysql.connect(host="localhost",user="root",password="Rohit@12")
+                conn=pymysql.connect(host="YOUR HOST NAME",user="Your USER NAME",password="YOUR PASSWORD")
                 mycursor = conn.cursor()
             except:
                 messagebox.showerror('Error', "Database Connectivity Issue, Try again after Some time")
@@ -125,7 +125,7 @@ def search_contacts():
             messagebox.showerror('Error','At Least One field required')
         else:
             try:
-                conn = pymysql.connect(host='localhost',user='root',password='Rohit@12')
+                conn = pymysql.connect(host='YOUR HOST NAME',user='YOUR USER NAME',password='YOUR PASSWORD')
                 mycursor = conn.cursor()
             except:
                 messagebox.showerror('Error','Database Connection Error')
@@ -190,7 +190,7 @@ def update_contacts():
             messagebox.showerror('Error','All fields are required')
         else:
             try:
-                conn = pymysql.connect(host='localhost',user='root',password='Rohit@12')
+                conn = pymysql.connect(host='YOUR HOST NAME',user='YOUR USER NAME',password='YOUR PASSWORD')
                 mycursor = conn.cursor()
             except:
                 messagebox.showerror('Error','Database Connection Error, Try Again after Some time')
@@ -288,7 +288,7 @@ def update_contacts():
 
 def delete_contacts():
     try:
-        conn = pymysql.connect(host='localhost',user='root',password='Rohit@12')
+        conn = pymysql.connect(host='YOUR HOST NAME',user='YOUR USER NAME',password='YOUR PASSWORD')
         mycursor = conn.cursor()
     except:
         messagebox.showerror('Error','Database Connection Error')
@@ -313,7 +313,7 @@ def delete_contacts():
 def view_contacts():
 
     try:
-        conn = pymysql.connect(host='localhost',user='root',password='Rohit@12')
+        conn = pymysql.connect(host='YOUR HOST NAME',user='YOUR USER NAME',password='YOUR PASSWORD')
         mycursor = conn.cursor()
     except:
         messagebox.showerror('Error','Database Connection Error')
