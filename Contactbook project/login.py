@@ -24,7 +24,7 @@ def forget_password():
             messagebox.showerror('Error',"password and confirm password should be the same , check again",parent=root)
         else:
             try:
-                conn = pymysql.connect(host='localhost',user='root',password='Rohit@12')
+                conn = pymysql.connect(host='YOUR HOST NAME',user='YOUR USER NAME',password='YOUR PASSWORD')
                 mycursor = conn.cursor()
             except:
                 messagebox.showerror('Error','Database Connection Error, Try Again after Some time')
@@ -143,7 +143,7 @@ def login_user():
     
     else:
         try:
-            conn=pymysql.connect(host="localhost",user="root",password="Rohit@12")
+            conn = pymysql.connect(host='YOUR HOST NAME',user='YOUR USER NAME',password='YOUR PASSWORD')
             mycursor = conn.cursor()
         except:
             messagebox.showerror('Error',"Database connection error, try after some time")
